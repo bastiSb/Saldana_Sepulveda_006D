@@ -8,11 +8,11 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     HeaderComponent
   ],
-  //exports: [
-  //  HeaderComponent
-  //],
+  exports: [
+    HeaderComponent
+  ],
   imports: [
-    //CommonModule,
+    CommonModule,
     IonicModule
   ]
 })

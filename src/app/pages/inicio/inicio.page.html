@@ -2,10 +2,14 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button (click)="mostrarMenu()">
-        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+        <ion-icon slot="icon-only" name="menu-outline" color = "success"></ion-icon>
       </ion-button>
     </ion-buttons>
-    
+    <ion-buttons slot="end">
+      <ion-button (click)="lanzarMenu()">
+        <ion-icon slot="icon-only" name="power-outline" color = "success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
     <ion-buttons slot="end">
     </ion-buttons>
     <ion-title color="success">Inicio</ion-title>
@@ -16,7 +20,7 @@
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle class="subtitulo">APP Reciclaje</ion-card-subtitle>
-      <ion-card-title class="titulo" color="success">¡Bienvenido!</ion-card-title>
+      <ion-card-title class="titulo" color="success">¡Bienvenido {{nombre}}!</ion-card-title>
     </ion-card-header>
 
     <ion-card-content class="ion-padding">
@@ -29,16 +33,21 @@
       Más abajo encontrarás las diferentes opciones para navegar en la app.
     </ion-card-content>
   </ion-card>
-   
-  <ion-list>
-    <ion-item *ngFor="let c of componentes"
-        [routerLink] = "c.redirecTo"
-        detail="true"> 
-        <ion-icon [name]="c.icon"
-          slot="start"
-          color="success"></ion-icon> 
-          {{c.name}}
-    </ion-item>
- </ion-list>
+  <ion-card>
+    <ion-list>
+      <ion-item *ngFor="let c of componentes"
+          [routerLink] = "c.redirecTo"
+          detail="true"> 
+          <ion-icon [name]="c.icon"
+            slot="start"
+            color="success"></ion-icon> 
+            {{c.name}}
+      </ion-item>
+  </ion-list>
+</ion-card>
+
+  <!-- <ion-button (click)="onlogout()"
+              expand="block"
+              color="success">Desconectarse</ion-button> -->
 
 </ion-content>

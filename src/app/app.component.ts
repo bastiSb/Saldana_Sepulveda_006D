@@ -25,6 +25,22 @@ export class AppComponent {
       name: 'Inscripción Retiro Reciclaje', 
       redirecTo: '/form-re'
     },
+    {
+      icon: 'alarm-outline', 
+      name: 'Noticias', 
+      redirecTo: '/noticias'
+    },
+    {
+      icon: 'albums-outline', 
+      name: 'Inventario Reciclaje', 
+      redirecTo: '/inventario-re'
+    },
+    {
+      icon: 'search-outline', 
+      name: 'Ver Inventario Reciclaje', 
+      redirecTo: '/ver-inve'
+    }
+    
   ]
   constructor() {}
 }

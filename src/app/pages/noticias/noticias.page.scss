@@ -1,0 +1,28 @@
+
+.text{
+    color: var(--ion-color-success) !important;
+    font-size: 12px !important;
+
+}
+
+.noticia-name{
+    font-size: 12px;
+    color:lightgray;
+    text-align:justify
+}
+
+.noticia-description{
+    text-align:justify
+}
+
+
+.noticia-more{
+    font-size: 15px !important;
+    position: absolute;
+    right: -10px;
+    top: -18px
+}
+
+.action-sheet-group {
+    color: var(--ion-color-success) !important;
+  }

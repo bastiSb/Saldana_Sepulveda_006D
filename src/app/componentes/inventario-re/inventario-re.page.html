@@ -1,0 +1,45 @@
+<app-header titulo= "Inventario reciclaje"></app-header>
+
+<ion-content>
+    <h3 class="subtitulo p-3"
+        class="styleSub">Ingrese los Datos del Inventario</h3>
+
+  <ion-item>
+    <ion-label class="normal" 
+               position="floating"
+               color="success">Tipo Reciclaje: 
+    </ion-label>
+    <ion-input class="normal" 
+               type="text" 
+               inputmode="text"
+               [(ngModel)]="newInventario.tipo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="normal" 
+               position="floating"
+               color="success">Categoria del Producto a Reciclar: : 
+    </ion-label>
+    <ion-input class="normal" 
+               type="text" 
+               inputmode="text"
+               [(ngModel)]="newInventario.categoria"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="normal" 
+               position="floating"
+               color="success">Cantidad de Producto: 
+    </ion-label>
+    <ion-input class="normal" 
+               type="number" 
+               inputmode="numeric"
+               [(ngModel)]="newInventario.cantidad"></ion-input>
+  </ion-item>
+
+  <ion-button style="margin: 30px;" 
+              expand="block" 
+              color="success"
+              (click)="saveInventario()">Guardar</ion-button>
+
+</ion-content>

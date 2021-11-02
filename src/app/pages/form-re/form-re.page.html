@@ -1,19 +1,4 @@
-<!--<app-header titulo="Inscripción Retiro Reciclaje"></app-header>-->
-
-<ion-header>
-  <ion-toolbar color="success">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"
-          text="Volver"
-          color="light"
-          mode="ios">
-      </ion-back-button>
-    </ion-buttons>
-    <ion-title>Inscripción Retiro Reciclaje</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
+<app-header titulo="Inscripción Retiro Reciclaje"></app-header>
 
 <ion-content class="ion-padding">
   <ion-card class="ion-padding">
@@ -27,7 +12,7 @@
         <ion-label>Nombre Completo: </ion-label>
         <ion-input type="text" [(ngModel)]= "usuario.nombreCompleto"
                    name="nombreCompleto"
-                   minlength="12" 
+                   minlength="6" 
                    maxlength="24" 
                    required></ion-input>
       </ion-item>
@@ -35,9 +20,8 @@
       <ion-item>
         <ion-label>Edad: </ion-label>
         <ion-input type="number" [(ngModel)]= "usuario.edad"
-                   name="edad"
-                   minlength="1" 
-                   maxlength="2" 
+                   name="edad"   minlength="1" 
+                   maxlength="2" inputmode="numeric"
                    required></ion-input>
       </ion-item>
 
@@ -46,7 +30,8 @@
         <ion-input type="tel" name="telefono" 
                    minlength="8" maxlength="9" 
                    required class="controls" [(ngModel)]= "usuario.telefono"
-                   placeholder="957310032" required></ion-input>
+                   placeholder="957310032" 
+                   inputmode="numeric" required></ion-input>
       </ion-item>
       <!--aplicar un formulario con angular -->
 
